@@ -1,0 +1,13 @@
+<body>
+  <div class="container">
+    <h5 class="font-weight-light text-center mt-4 mb-0">Gallery</h5>
+    <hr class="mt-2 mb-5">
+    <div class="row text-center text-lg-left">
+      <div class="col-lg-3 col-md-4 col-6" *ngFor="let image of images">
+        <a class="d-block mb-4 h-100">
+          <img class="img-fluid img-thumbnail" src="{{image.imageUrl}}" alt="{{image.imageTitle}}">
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
