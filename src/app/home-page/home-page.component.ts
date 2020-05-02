@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as p5 from 'p5';
+import { AboutMeService } from '../services/about-me.service';
 
 @Component({
   selector: 'app-home-page',
@@ -8,11 +9,15 @@ import * as p5 from 'p5';
 })
 export class HomePageComponent implements OnInit {
   private p5sketch;
+  aboutMe: string;
 
-  constructor() { }
+  constructor(
+    private aboutMeService: AboutMeService
+  ) { }
 
   ngOnInit() {
     this.createCanvas();
+    this.aboutMe = this.aboutMeService.getAboutMe();
   }
 
   createCanvas() {
