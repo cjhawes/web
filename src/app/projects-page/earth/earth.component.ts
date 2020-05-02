@@ -21,16 +21,16 @@ export class EarthComponent implements OnInit {
 
   private sketch(p: any) {
     let angle = 0;
-    // let table;
+    let table;
     const r = 200;
     let earth;
 
     p.preload = () => {
       earth = p.loadImage('../../assets/images/earth.jpg');
-      // table = p.loadTable(
-      //   'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_month.csv',
-      //   'header'
-      // );
+      table = p.loadTable(
+        'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_month.csv',
+        'header'
+      );
     };
 
     p.setup = () => {
@@ -51,37 +51,37 @@ export class EarthComponent implements OnInit {
       p.texture(earth);
       p.sphere(r);
 
-      // for (const row of table.rows) {
-      //   const lat = row.getNum('latitude');
-      //   const lon = row.getNum('longitude');
-      //   const mag = row.getNum('mag');
+      for (const row of table.rows) {
+        const lat = row.getNum('latitude');
+        const lon = row.getNum('longitude');
+        const mag = row.getNum('mag');
 
-      //   const theta = p.radians(lat);
+        const theta = p.radians(lat);
 
-      //   const phi = p.radians(lon) + p.PI;
+        const phi = p.radians(lon) + p.PI;
 
-      //   const x = r * p.cos(theta) * p.cos(phi);
-      //   const y = -r * p.sin(theta);
-      //   const z = -r * p.cos(theta) * p.sin(phi);
+        const x = r * p.cos(theta) * p.cos(phi);
+        const y = -r * p.sin(theta);
+        const z = -r * p.cos(theta) * p.sin(phi);
 
-      //   const pos = p.createVector(x, y, z);
+        const pos = p.createVector(x, y, z);
 
-      //   let h = p.pow(10, mag);
-      //   const maxh = p.pow(10, 7);
-      //   h = p.map(h, 0, maxh, 10, 100);
-      //   const xaxis = p.createVector(1, 0, 0);
+        let h = p.pow(10, mag);
+        const maxh = p.pow(10, 7);
+        h = p.map(h, 0, maxh, 10, 100);
+        const xaxis = p.createVector(1, 0, 0);
 
-      //   const angleb = p.abs(xaxis.angleBetween(pos));
+        const angleb = p.abs(xaxis.angleBetween(pos));
 
-      //   const raxis = xaxis.cross(pos);
+        const raxis = xaxis.cross(pos);
 
-      //   p.push();
-      //   p.translate(x, y, z);
-      //   p.rotate(angleb, raxis);
-      //   p.fill(255);
-      //   p.box(h, 5, 5);
-      //   p.pop();
-      // }
+        p.push();
+        p.translate(x, y, z);
+        p.rotate(angleb, raxis);
+        p.fill(255);
+        p.box(h, 5, 5);
+        p.pop();
+      }
     };
   }
 }

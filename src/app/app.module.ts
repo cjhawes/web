@@ -16,6 +16,7 @@ import { CubeWaveComponent } from './projects-page/cube-wave/cube-wave.component
 import { BlackHoleComponent } from './projects-page/black-hole/black-hole.component';
 import { SolarSystemComponent } from './projects-page/solar-system/solar-system.component';
 import { FluidSimulationComponent } from './projects-page/fluid-simulation/fluid-simulation.component';
+import { PiVisComponent } from './projects-page/pi-vis/pi-vis.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { FluidSimulationComponent } from './projects-page/fluid-simulation/fluid
     CubeWaveComponent,
     BlackHoleComponent,
     SolarSystemComponent,
-    FluidSimulationComponent
+    FluidSimulationComponent,
+    PiVisComponent
   ],
   imports: [
     BrowserModule,

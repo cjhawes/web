@@ -11,6 +11,7 @@ import { CubeWaveComponent } from './projects-page/cube-wave/cube-wave.component
 import { BlackHoleComponent } from './projects-page/black-hole/black-hole.component';
 import { SolarSystemComponent } from './projects-page/solar-system/solar-system.component';
 import { FluidSimulationComponent } from './projects-page/fluid-simulation/fluid-simulation.component';
+import { PiVisComponent } from './projects-page/pi-vis/pi-vis.component';
 
 const routes: Routes = [
   { path: 'home', component: HomePageComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'projects/black-hole', component: BlackHoleComponent },
   { path: 'projects/solar-system', component: SolarSystemComponent },
   { path: 'projects/fluid-simulation', component: FluidSimulationComponent },
+  { path: 'projects/pi-vis', component: PiVisComponent },
   { path: 'gallery', component: GalleryPageComponent },
   { path: 'blog', component: BlogPageComponent },
   { path: 'contact', component: ContactPageComponent },
