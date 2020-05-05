@@ -15,4 +15,9 @@ export class ResearchService {
   getResearchPosts(): Observable<Research[]> {
     return this.http.get<Research[]>('http://localhost:4201/api/research');
   }
+
+  getResearchPost(id: number): Observable<Research> {
+    const url = `http://localhost:4201/api/research/${id}`;
+    return this.http.get<Research>(url);
+  }
 }

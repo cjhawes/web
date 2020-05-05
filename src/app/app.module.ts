@@ -18,6 +18,7 @@ import { FluidSimulationComponent } from './projects-page/fluid-simulation/fluid
 import { PiVisComponent } from './projects-page/pi-vis/pi-vis.component';
 import { CvPageComponent } from './cv-page/cv-page.component';
 import { ResearchPageComponent } from './research-page/research-page.component';
+import { PostComponent } from './research-page/post/post.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { ResearchPageComponent } from './research-page/research-page.component';
     SolarSystemComponent,
     FluidSimulationComponent,
     PiVisComponent,
-    ResearchPageComponent
+    ResearchPageComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,

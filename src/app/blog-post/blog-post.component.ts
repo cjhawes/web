@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { BlogPostService } from '../services/blog-post.service';
 import { ActivatedRoute } from '@angular/router';
 import { BlogPost } from '../Models/blog-post.model';
-import { Image } from '../Models/image.model';
-import { ImageService } from '../services/image.service';
 
 @Component({
   selector: 'app-blog-post',
@@ -12,12 +10,10 @@ import { ImageService } from '../services/image.service';
 })
 export class BlogPostComponent implements OnInit {
   post: BlogPost;
-  image: Image;
 
   constructor(
     private route: ActivatedRoute,
-    private blogPostService: BlogPostService,
-    private imageService: ImageService
+    private blogPostService: BlogPostService
   ) { }
 
   ngOnInit(): void {
@@ -25,10 +21,6 @@ export class BlogPostComponent implements OnInit {
     this.blogPostService.getBlogPost(id)
       .subscribe(post => {
         this.post = post;
-    });
-    this.imageService.getImage(id)
-      .subscribe(image => {
-         this.image = image;
     });
   }
 }
