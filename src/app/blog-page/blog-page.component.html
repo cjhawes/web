@@ -2,6 +2,9 @@
   <div class="container">
     <h5 class="font-weight-light text-center mt-4 mb-0">Posts</h5>
     <hr class="mt-2 mb-5">
+    <div *ngIf="!blogPosts[0]">
+      <p class="font-weight-light text-center mt-4 mb-0">Api Unhosted  -  PAGE WIP</p>
+    </div>
     <div class="row">
       <div class="col-sm-4" *ngFor="let post of blogPosts | async">
         <div class="card">
