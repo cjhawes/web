@@ -19,6 +19,7 @@ import { PiVisComponent } from './projects-page/pi-vis/pi-vis.component';
 import { CvPageComponent } from './cv-page/cv-page.component';
 import { ResearchPageComponent } from './research-page/research-page.component';
 import { PostComponent } from './research-page/post/post.component';
+import { ToDoListComponent } from './projects-page/to-do-list/to-do-list.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { PostComponent } from './research-page/post/post.component';
     FluidSimulationComponent,
     PiVisComponent,
     ResearchPageComponent,
-    PostComponent
+    PostComponent,
+    ToDoListComponent
   ],
   imports: [
     BrowserModule,

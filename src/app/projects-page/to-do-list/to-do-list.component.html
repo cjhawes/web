@@ -1,0 +1,15 @@
+<body>
+  <div class="container">
+    <h5 class="font-weight-light text-center mt-4 mb-0">Projects in Progress</h5>
+    <hr class="mt-2 mb-5">
+    <div *ngIf="!list[0]">
+      <p class="font-weight-light text-center mt-4 mb-0">Api Unhosted  -  PAGE WIP</p>
+    </div>
+    <ul class="list-group list-group-flush" *ngFor="let item of list">
+      <li class="list-group-item">{{item.name}}</li>
+      <ul class="list-group">
+        <li class="list-group-item">{{item.description}}</li>
+      </ul>
+    </ul>
+  </div>
+</body>

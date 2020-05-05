@@ -14,10 +14,12 @@ import { PiVisComponent } from './projects-page/pi-vis/pi-vis.component';
 import { CvPageComponent } from './cv-page/cv-page.component';
 import { ResearchPageComponent } from './research-page/research-page.component';
 import { PostComponent } from './research-page/post/post.component';
+import { ToDoListComponent } from './projects-page/to-do-list/to-do-list.component';
 
 const routes: Routes = [
   { path: 'home', component: HomePageComponent },
   { path: 'projects', component: ProjectsPageComponent },
+  { path: 'projects/todo', component: ToDoListComponent },
   { path: 'projects/earth', component: EarthComponent },
   { path: 'projects/cube-wave', component: CubeWaveComponent },
   { path: 'projects/black-hole', component: BlackHoleComponent },
