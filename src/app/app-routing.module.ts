@@ -12,6 +12,7 @@ import { SolarSystemComponent } from './projects-page/solar-system/solar-system.
 import { FluidSimulationComponent } from './projects-page/fluid-simulation/fluid-simulation.component';
 import { PiVisComponent } from './projects-page/pi-vis/pi-vis.component';
 import { CvPageComponent } from './cv-page/cv-page.component';
+import { ResearchPageComponent } from './research-page/research-page.component';
 
 const routes: Routes = [
   { path: 'home', component: HomePageComponent },
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'projects/solar-system', component: SolarSystemComponent },
   { path: 'projects/fluid-simulation', component: FluidSimulationComponent },
   { path: 'projects/pi-vis', component: PiVisComponent },
+  { path: 'research', component: ResearchPageComponent },
   { path: 'gallery', component: GalleryPageComponent },
   { path: 'blog', component: BlogPageComponent },
   { path: 'cv', component: CvPageComponent},
