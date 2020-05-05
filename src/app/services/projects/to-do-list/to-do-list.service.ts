@@ -12,7 +12,7 @@ export class ToDoListService {
     private http: HttpClient
   ) { }
 
-  getToDoList(): Observable<ToDoList> {
-    return this.http.get<ToDoList>('http://localhost:4201/api/'); // edit
+  getToDoList(): Observable<ToDoList[]> {
+    return this.http.get<ToDoList[]>('http://localhost:4201/api/todo');
   }
 }
