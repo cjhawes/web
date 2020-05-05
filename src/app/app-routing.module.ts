@@ -4,7 +4,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { GalleryPageComponent } from './gallery-page/gallery-page.component';
 import { BlogPageComponent } from './blog-page/blog-page.component';
-import { BlogPostComponent } from './blog-post/blog-post.component';
+import { BlogPostComponent } from './blog-page/blog-post/blog-post.component';
 import { EarthComponent } from './projects-page/earth/earth.component';
 import { CubeWaveComponent } from './projects-page/cube-wave/cube-wave.component';
 import { BlackHoleComponent } from './projects-page/black-hole/black-hole.component';
