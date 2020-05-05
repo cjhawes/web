@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as p5 from 'p5';
-import { AboutMeService } from '../services/about-me.service';
+import { AboutMeService } from '../services/home/about-me.service';
 import { HomeP5Service } from '../services/projects/home/home-p5.service';
 
 @Component({

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ResearchService } from '../services/research.service';
+import { ResearchService } from '../services/research/research.service';
 
 @Component({
   selector: 'app-research-page',
