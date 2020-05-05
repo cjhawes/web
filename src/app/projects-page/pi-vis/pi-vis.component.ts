@@ -13,7 +13,7 @@ export class PiVisComponent implements OnInit {
     private piVisService: PiVisService
   ) { }
 
-  ngOnInit(): void { // WIP
+  ngOnInit(): void {
     this.createCanvas();
   }
 
