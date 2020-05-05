@@ -17,6 +17,8 @@ import { SolarSystemComponent } from './projects-page/solar-system/solar-system.
 import { FluidSimulationComponent } from './projects-page/fluid-simulation/fluid-simulation.component';
 import { PiVisComponent } from './projects-page/pi-vis/pi-vis.component';
 import { CvPageComponent } from './cv-page/cv-page.component';
+import { ResearchPageComponent } from './research-page/research-page.component';
+import { PostComponent } from './research-page/post/post.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { CvPageComponent } from './cv-page/cv-page.component';
     BlackHoleComponent,
     SolarSystemComponent,
     FluidSimulationComponent,
-    PiVisComponent
+    PiVisComponent,
+    ResearchPageComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,

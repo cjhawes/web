@@ -1,0 +1,15 @@
+<body>
+  <div class="container">
+    <h5 class="font-weight-light text-center mt-4 mb-0">Research</h5>
+    <hr class="mt-2 mb-5">
+    <div class="row">
+      <div class="col-sm-4" *ngFor="let post of researchPosts | async">
+        <div class="card">
+          <div class="card-body">
+            <a routerLink="/research/{{post.id}}"><b>{{post.title}}</b> By {{post.author}} - Posted on {{post.posted | date}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
