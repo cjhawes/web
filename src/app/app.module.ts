@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
-import { ContactPageComponent } from './contact-page/contact-page.component';
 import { HeaderComponent } from './header/header.component';
 import { BlogPageComponent } from './blog-page/blog-page.component';
 import { GalleryPageComponent } from './gallery-page/gallery-page.component';
@@ -17,13 +16,14 @@ import { BlackHoleComponent } from './projects-page/black-hole/black-hole.compon
 import { SolarSystemComponent } from './projects-page/solar-system/solar-system.component';
 import { FluidSimulationComponent } from './projects-page/fluid-simulation/fluid-simulation.component';
 import { PiVisComponent } from './projects-page/pi-vis/pi-vis.component';
+import { CvPageComponent } from './cv-page/cv-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     ProjectsPageComponent,
-    ContactPageComponent,
+    CvPageComponent,
     HeaderComponent,
     BlogPageComponent,
     GalleryPageComponent,

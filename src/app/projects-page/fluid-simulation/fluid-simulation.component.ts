@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as p5 from 'p5';
+// import * as p5 from 'p5';
 
 @Component({
   selector: 'app-fluid-simulation',
@@ -7,7 +7,7 @@ import * as p5 from 'p5';
   styleUrls: ['./fluid-simulation.component.css']
 })
 export class FluidSimulationComponent implements OnInit {
-  private p5sketch;
+  // private p5sketch;
 
   constructor() { }
 
@@ -18,6 +18,7 @@ export class FluidSimulationComponent implements OnInit {
   createCanvas() {
     // this.p5sketch = new p5(this.sketch);
   }
+
 
   // private sketch(p: any) {
   //   let fluid;
