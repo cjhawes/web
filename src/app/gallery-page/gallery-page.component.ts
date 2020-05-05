@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ImageService } from '../services/image.service';
+import { Image } from '../Models/image.model';
 
 @Component({
   selector: 'app-gallery-page',
@@ -7,7 +8,7 @@ import { ImageService } from '../services/image.service';
   styleUrls: ['./gallery-page.component.css']
 })
 export class GalleryPageComponent implements OnInit {
-  images;
+  images: Image[];
 
   constructor(
     private imageService: ImageService
